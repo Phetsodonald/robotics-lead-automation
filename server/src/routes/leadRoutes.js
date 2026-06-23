@@ -15,8 +15,8 @@ router.post("/", async (req, res) => {
       message
     );
 
-    //await sendEmail(email, aiReply);
-    console.log(aiReply)
+    await sendEmail(email, aiReply);
+    
     res.status(200).json({
       success: true,
       aiReply
