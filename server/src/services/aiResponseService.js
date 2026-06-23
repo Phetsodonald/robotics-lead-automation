@@ -34,8 +34,6 @@ Message: ${message}
       console.log(`Attempt ${attempt} failed`);
 
       if (attempt === retries) throw err;
-
-      // wait before retrying
       await sleep(1000 * attempt);
     }
   }
