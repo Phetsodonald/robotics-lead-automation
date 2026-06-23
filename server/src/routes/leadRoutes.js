@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
     );
 
     //await sendEmail(email, aiReply);
-    console.log("skipped email send")
+    console.log(aiReply)
     res.status(200).json({
       success: true,
       aiReply
