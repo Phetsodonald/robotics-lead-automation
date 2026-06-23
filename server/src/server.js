@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
         message: "Ster Robotics Automation API",
     })
 })
-
-app.listen(process.env.PORT || 8000, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
     console.log(`Server is running at Port: ${process.env.PORT}`)
 })
